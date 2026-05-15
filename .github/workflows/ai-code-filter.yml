@@ -69,6 +69,7 @@ jobs:
           mkdir -p "$root"
           rsync -a \
             --exclude '.git/' \
+            --exclude 'MANIFEST.sha256' \
             --exclude '__pycache__/' \
             --exclude '*.pyc' \
             --exclude '.pytest_cache/' \
@@ -79,6 +80,7 @@ jobs:
             --exclude '*.egg-info/' \
             --exclude 'ai-code-filter-*' \
             ./ "$root/"
+          ai-code-filter generate-manifest "$root" --output "$root/MANIFEST.sha256"
           (cd "$tmp" && zip -qr "$GITHUB_WORKSPACE/ai-code-filter-source.zip" ai-code-filter-v59)
       - name: Audit release artifact
         run: ai-code-filter release-audit ai-code-filter-source.zip --ci --output ai-code-filter-release-audit.json
