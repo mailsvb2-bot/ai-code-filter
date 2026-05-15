@@ -65,6 +65,8 @@ jobs:
       - name: Build release artifact for audit
         run: |
           tmp="$(mktemp -d)"
+          root="$tmp/ai-code-filter-v59"
+          mkdir -p "$root"
           rsync -a \
             --exclude '.git/' \
             --exclude '__pycache__/' \
@@ -76,8 +78,8 @@ jobs:
             --exclude 'dist/' \
             --exclude '*.egg-info/' \
             --exclude 'ai-code-filter-*' \
-            ./ "$tmp/"
-          (cd "$tmp" && zip -qr "$GITHUB_WORKSPACE/ai-code-filter-source.zip" .)
+            ./ "$root/"
+          (cd "$tmp" && zip -qr "$GITHUB_WORKSPACE/ai-code-filter-source.zip" ai-code-filter-v59)
       - name: Audit release artifact
         run: ai-code-filter release-audit ai-code-filter-source.zip --ci --output ai-code-filter-release-audit.json
       - name: Upload SARIF
