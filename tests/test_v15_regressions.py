@@ -24,7 +24,7 @@ def incomplete_report() -> Report:
 
 
 def test_package_version_and_capability_matrix_match():
-    assert __version__ == "0.58.1"
+    assert __version__ == "0.59.0"
     assert assistant_capability_matrix()["version"] == __version__
 
 
