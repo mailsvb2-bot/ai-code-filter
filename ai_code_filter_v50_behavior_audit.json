@@ -1,0 +1,27 @@
+{
+  "version": "v50",
+  "title": "Behavior audit layer",
+  "added": [
+    "behavior-audit CLI command",
+    "explicit production behavior contract execution",
+    "import/function/command probes in subprocesses with timeout",
+    "expected exception contracts",
+    "behavior summary JSON output",
+    "FindingCore integration for behavior probe failures"
+  ],
+  "verification": [
+    "compileall OK",
+    "pytest chunks: 320 passed, 7 warnings",
+    "self-analyze TOTAL=0",
+    "truthfulness-gate TOTAL=0",
+    "config-contract TOTAL=0",
+    "db-consistency TOTAL=0",
+    "rule-ownership TOTAL=0",
+    "performance-budget TOTAL=0"
+  ],
+  "limitations": [
+    "not a proof of full production correctness",
+    "contracts must be explicitly supplied or import-smoke enabled",
+    "does not replace integration tests, coverage.py, mutation testing, or live service/database verification"
+  ]
+}

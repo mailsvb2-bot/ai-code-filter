@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "name": "flask open redirect real-world-lite fixture",
+      "path": "framework/flask_bad.py",
+      "profiles": ["flask"],
+      "expected_categories": ["flask.open_redirect.risk"]
+    },
+    {
+      "name": "fastapi dynamic html framework fixture",
+      "path": "framework/fastapi_bad.py",
+      "profiles": ["fastapi"],
+      "expected_categories": ["fastapi.html_response.dynamic_html"]
+    },
+    {
+      "name": "canonical autonomy feature visibility fixture",
+      "path": "framework/autonomy_bad.py",
+      "profiles": ["autonomy-canon"],
+      "expected_categories": ["autonomy_canon.admin_surface.missing_signal"]
+    }
+  ]
+}

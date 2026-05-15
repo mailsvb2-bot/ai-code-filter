@@ -1,0 +1,25 @@
+{
+  "release": "v49_semantic_pytest_completeness",
+  "added": [
+    "pytest-audit --semantic-completeness",
+    "production public symbol inventory",
+    "test import/reference semantic signal collection",
+    "low public API semantic coverage finding",
+    "complex/error-path symbol without direct test reference finding",
+    "raise-path without exception assertion signal",
+    "weak/decorative assertion detection"
+  ],
+  "verified": {
+    "compileall": "OK",
+    "pytest": "314 passed, 7 warnings",
+    "pytest_audit_static_only": "No problems found",
+    "self_analyze": "No problems found",
+    "truthfulness_gate": "No problems found",
+    "config_contract": "No problems found",
+    "db_consistency": "No problems found",
+    "rule_ownership": "No problems found",
+    "performance_budget": "No problems found",
+    "release_audit_directory": "No problems found"
+  },
+  "honesty_note": "Semantic completeness is heuristic and does not prove full behavioral or branch coverage."
+}

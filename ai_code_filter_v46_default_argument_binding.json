@@ -1,0 +1,15 @@
+{
+  "version": "v46_default_argument_binding",
+  "status": "verified",
+  "scope": [
+    "same_file_default_argument_taint",
+    "same_file_default_passthrough_to_sink",
+    "cross_file_default_argument_taint",
+    "cross_file_default_passthrough_to_sink"
+  ],
+  "limitations": [
+    "not full Python call binding",
+    "decorator signature rewriting remains out of scope",
+    "runtime dependency injection remains out of scope"
+  ]
+}

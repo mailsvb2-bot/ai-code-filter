@@ -1,0 +1,17 @@
+{
+  "version": "v40_finding_core",
+  "implemented": [
+    "ai_code_filter/finding_core.py",
+    "centralized issue normalization, fingerprinting, dedupe, suppressions, baseline gates, quality budgets and CI exit helper",
+    "policy.py compatibility facade delegates to FindingCore",
+    "CLI governance path uses FindingCore.process",
+    "regression coverage for dedupe, suppression-before-gate and baseline fingerprint semantics"
+  ],
+  "not_implemented": [
+    "large autonomous DecisionCore",
+    "agent loop",
+    "business execution policy",
+    "budget or approval control-plane"
+  ],
+  "status": "scoped finding decision core, not autonomous DecisionCore"
+}

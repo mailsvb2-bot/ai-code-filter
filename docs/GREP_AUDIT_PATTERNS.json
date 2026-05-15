@@ -1,0 +1,13 @@
+{
+  "patterns": [
+    {
+      "id": "policy.sample_forbidden_public_name",
+      "regex": "\\bLegacyInternalName\\b",
+      "severity": "MEDIUM",
+      "description": "Sample policy pattern for a forbidden public name. Replace with project-specific names when enabling this gate.",
+      "recommendation": "Keep public/project-specific naming policy in this file and review every match before release.",
+      "include": ["**/*.py", "**/*.md", "**/*.json", "**/*.toml"],
+      "exclude": ["docs/GREP_AUDIT_PATTERNS.json"]
+    }
+  ]
+}

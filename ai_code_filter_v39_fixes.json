@@ -1,0 +1,15 @@
+{
+  "version": "v39-engine-hardening",
+  "scope": [
+    "symbol_import_resolver_2_lite",
+    "finding_confidence_and_evidence",
+    "false_negative_regression_tests",
+    "interprocedural_lite_taint",
+    "same_file_wrapper_sink_detection",
+    "config_contract_audit",
+    "truthfulness_gate",
+    "limitations_registry",
+    "baseline_write_mode"
+  ],
+  "honesty_note": "This is still a deterministic audit helper, not a complete static analyzer. Dynamic imports, runtime reflection, deep type inference and full interprocedural analysis remain limited."
+}

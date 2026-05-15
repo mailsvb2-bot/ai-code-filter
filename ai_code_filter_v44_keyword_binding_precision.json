@@ -1,0 +1,14 @@
+{
+  "version": "v44_keyword_binding_precision",
+  "implemented": [
+    "same_file_keyword_wrapper_binding",
+    "cross_file_keyword_wrapper_binding",
+    "cross_file_pass_through_helper_to_direct_sink",
+    "regression_corpus_v44"
+  ],
+  "limitations": {
+    "full_call_binding": false,
+    "star_args_kwargs": false,
+    "dynamic_dispatch": false
+  }
+}

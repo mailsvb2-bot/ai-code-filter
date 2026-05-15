@@ -1,0 +1,129 @@
+{
+  "version": "0.38.0",
+  "items": [
+    {
+      "capability": "AI reviewer",
+      "status": "FULL"
+    },
+    {
+      "capability": "52 categories / 1040 examples",
+      "status": "FULL"
+    },
+    {
+      "capability": "exact locations",
+      "status": "FULL"
+    },
+    {
+      "capability": "stereotype guard",
+      "status": "FULL"
+    },
+    {
+      "capability": "chain inspector",
+      "status": "FULL"
+    },
+    {
+      "capability": "unknown call ratio",
+      "status": "PARTIAL+"
+    },
+    {
+      "capability": "contract validator",
+      "status": "FULL"
+    },
+    {
+      "capability": "drift monitor",
+      "status": "FULL"
+    },
+    {
+      "capability": "fatigue detector",
+      "status": "FULL"
+    },
+    {
+      "capability": "polite annoyance",
+      "status": "FULL"
+    },
+    {
+      "capability": "hidden information",
+      "status": "FULL"
+    },
+    {
+      "capability": "deep module analysis",
+      "status": "FULL"
+    },
+    {
+      "capability": "contradictions",
+      "status": "FULL"
+    },
+    {
+      "capability": "pipeline integrity",
+      "status": "FULL"
+    },
+    {
+      "capability": "unified reports",
+      "status": "FULL"
+    },
+    {
+      "capability": "deterministic catalog",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "SARIF/JUnit/Markdown/HTML",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "suppression governance",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "plugin API",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "baseline quality gates",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "python dataflow",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "cross-file python dataflow",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "JS/TS structure analyzer",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "benchmarks",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "parallel local scan",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "dependency resolver",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "SDK symbol index",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "pyright/mypy adapters",
+      "status": "SUPERSET"
+    },
+    {
+      "capability": "conservative SDK unknown-call validator",
+      "status": "SUPERSET"
+    }
+  ],
+  "known_limitations": [
+    "JS/TS is not full AST",
+    "Python taint is lightweight",
+    "benchmark is not a large real-world corpus",
+    "unknown-call detection is improved by resolver/SDK/type-tool adapters but still not a full type checker"
+  ],
+  "historical_versions": true,
+  "current_release_version": "0.58.1"
+}

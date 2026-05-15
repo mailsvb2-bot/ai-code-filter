@@ -1,0 +1,704 @@
+{
+  "JS001": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS002": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS003": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS004": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS005": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS006": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS007": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "JS008": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY001": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY002": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY003": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY004": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY005": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY006": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY007": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY008": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY009": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY010": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY011": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY012": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY013": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY014": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY015": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY016": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY017": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY018": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY019": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY020": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY021": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY022": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY023": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY024": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY025": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY026": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "security",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY027": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "PY028": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "TXT001": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "TXT002": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  },
+  "TXT003": {
+    "coverage": [
+      "direct_call",
+      "alias_call"
+    ],
+    "known_gaps": [
+      "dynamic_getattr",
+      "runtime_reflection",
+      "wrapper_depth>1"
+    ],
+    "owner": "analysis",
+    "precision": "medium",
+    "recall_estimate": "conservative",
+    "status": "stable",
+    "tests": [
+      "test_"
+    ]
+  }
+}

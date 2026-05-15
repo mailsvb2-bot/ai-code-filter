@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "artifact_kind": "fixes",
+  "claim_boundary": "These fixes were identified by external architecture review, not by the v37 self-scan. v38 adds code, CLI commands, docs and regression tests for the new governance layers.",
+  "automated_tool_found_all": false,
+  "fixed_count": 5,
+  "claim_summary": {
+    "total_count": 5,
+    "by_source": {
+      "external_adversarial_audit": 5
+    }
+  },
+  "verification_commands": [
+    {
+      "command": "python -m pytest -q",
+      "status": "passed",
+      "exit_code": 0,
+      "artifact": "ai_code_filter_v38_test_output.txt"
+    },
+    {
+      "command": "python ai_filter.py capability-registry --validate --ci",
+      "status": "passed",
+      "exit_code": 0,
+      "artifact": "ai_code_filter_capability_registry_v38.json"
+    },
+    {
+      "command": "python ai_filter.py fuzz-suite --ci",
+      "status": "passed",
+      "exit_code": 0,
+      "artifact": "ai_code_filter_fuzz_v38.json"
+    }
+  ],
+  "fixes": [
+    {
+      "id": "V38-001",
+      "title": "Unified capability registry added",
+      "status": "fixed",
+      "classification": "hardening_gap",
+      "evidence_type": "regression_test",
+      "before_version": "0.37.0",
+      "after_version": "0.38.0",
+      "regression_test": true,
+      "test_path": "tests/test_v38_capability_registry.py",
+      "threat_model_gap": "Capability metadata was scattered across rules, coverage and suite modules.",
+      "source": {
+        "method": "external_adversarial_audit",
+        "reviewer": "assistant_external_acceptance",
+        "review_date": "2026-05-14",
+        "evidence": [
+          "ai_code_filter_v38_fixes.md"
+        ]
+      },
+      "reproduction": {
+        "command": "external architecture review of v37",
+        "observed_before": "Capability metadata was scattered across rules, coverage and suite modules.",
+        "verified_after": "v38 adds code, CLI, tests and docs for the capability."
+      }
+    },
+    {
+      "id": "V38-002",
+      "title": "Property-style fuzz suite added",
+      "status": "fixed",
+      "classification": "hardening_gap",
+      "evidence_type": "regression_test",
+      "before_version": "0.37.0",
+      "after_version": "0.38.0",
+      "regression_test": true,
+      "test_path": "tests/test_v38_fuzz_suite.py",
+      "threat_model_gap": "Manual fixtures alone do not explore encoded/path ambiguity families.",
+      "source": {
+        "method": "external_adversarial_audit",
+        "reviewer": "assistant_external_acceptance",
+        "review_date": "2026-05-14",
+        "evidence": [
+          "ai_code_filter_v38_fixes.md"
+        ]
+      },
+      "reproduction": {
+        "command": "external architecture review of v37",
+        "observed_before": "Manual fixtures alone do not explore encoded/path ambiguity families.",
+        "verified_after": "v38 adds code, CLI, tests and docs for the capability."
+      }
+    },
+    {
+      "id": "V38-003",
+      "title": "Architecture mass audit added",
+      "status": "fixed",
+      "classification": "hardening_gap",
+      "evidence_type": "regression_test",
+      "before_version": "0.37.0",
+      "after_version": "0.38.0",
+      "regression_test": true,
+      "test_path": "tests/test_v38_mass_and_dependency_audit.py",
+      "threat_model_gap": "Suite growth needed a guard against architecture sprawl and oversized modules.",
+      "source": {
+        "method": "external_adversarial_audit",
+        "reviewer": "assistant_external_acceptance",
+        "review_date": "2026-05-14",
+        "evidence": [
+          "ai_code_filter_v38_fixes.md"
+        ]
+      },
+      "reproduction": {
+        "command": "external architecture review of v37",
+        "observed_before": "Suite growth needed a guard against architecture sprawl and oversized modules.",
+        "verified_after": "v38 adds code, CLI, tests and docs for the capability."
+      }
+    },
+    {
+      "id": "V38-004",
+      "title": "Dependency audit added",
+      "status": "fixed",
+      "classification": "hardening_gap",
+      "evidence_type": "regression_test",
+      "before_version": "0.37.0",
+      "after_version": "0.38.0",
+      "regression_test": true,
+      "test_path": "tests/test_v38_mass_and_dependency_audit.py",
+      "threat_model_gap": "Dependency manifests lacked a focused consistency audit command.",
+      "source": {
+        "method": "external_adversarial_audit",
+        "reviewer": "assistant_external_acceptance",
+        "review_date": "2026-05-14",
+        "evidence": [
+          "ai_code_filter_v38_fixes.md"
+        ]
+      },
+      "reproduction": {
+        "command": "external architecture review of v37",
+        "observed_before": "Dependency manifests lacked a focused consistency audit command.",
+        "verified_after": "v38 adds code, CLI, tests and docs for the capability."
+      }
+    },
+    {
+      "id": "V38-005",
+      "title": "Release audit can invoke new governance layers",
+      "status": "fixed",
+      "classification": "hardening_gap",
+      "evidence_type": "regression_test",
+      "before_version": "0.37.0",
+      "after_version": "0.38.0",
+      "regression_test": true,
+      "test_path": "tests/test_v38_capability_registry.py",
+      "threat_model_gap": "The release command did not expose fuzz, mass, dependency and capability registry checks.",
+      "source": {
+        "method": "external_adversarial_audit",
+        "reviewer": "assistant_external_acceptance",
+        "review_date": "2026-05-14",
+        "evidence": [
+          "ai_code_filter_v38_fixes.md"
+        ]
+      },
+      "reproduction": {
+        "command": "external architecture review of v37",
+        "observed_before": "The release command did not expose fuzz, mass, dependency and capability registry checks.",
+        "verified_after": "v38 adds code, CLI, tests and docs for the capability."
+      }
+    }
+  ],
+  "audit_provenance": {
+    "claim_boundary": "These fixes were identified by external architecture review, not by the v37 self-scan. v38 adds code, CLI commands, docs and regression tests for the new governance layers.",
+    "automated_tool_found_all": false,
+    "primary_source": "external_adversarial_audit"
+  }
+}

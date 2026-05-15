@@ -1,0 +1,240 @@
+{
+  "behavior_audit": {
+    "limitations": [
+      "does not infer business requirements automatically",
+      "sandbox hardening is partial: --deny-network blocks Python socket creation but cannot fully confine arbitrary native subprocess behavior",
+      "does not replace end-to-end integration tests, coverage.py, mutation testing, or real service/database verification",
+      "import-smoke can execute import-time side effects, so use explicit specs for side-effectful projects"
+    ],
+    "status": "explicit_contract_execution_not_proof",
+    "supported": [
+      "import probes executed in subprocesses with timeout",
+      "function probes using JSON-serializable args/kwargs and expectations",
+      "expected exception contracts",
+      "command probes with exit-code/stdout/stderr expectations",
+      "import-smoke probes for discovered production modules",
+      "optional Python-probe socket blocking with --deny-network",
+      "optional command-probe disable with --no-command-probes",
+      "secret-like environment stripping with --deny-secret-env",
+      "environment allowlist with --env-allowlist"
+    ]
+  },
+  "coverage_audit": {
+    "limitations": [
+      "requires coverage.py installed",
+      "coverage percentages do not prove assertions are meaningful",
+      "flaky or environment-specific tests can still distort metrics"
+    ],
+    "status": "coverage_execution_gate_not_behavior_proof",
+    "supported": [
+      "coverage.py run --branch over pytest",
+      "line coverage budget",
+      "branch coverage budget",
+      "top uncovered measured files",
+      "uncovered-file budget",
+      "JSON/native report output"
+    ]
+  },
+  "dataflow": {
+    "cross_file_taint": "limited",
+    "database_consistency": "detects SQLite/Postgres/MySQL marker mismatches in runtime config, env contracts, and simple Python arrays/dicts; does not execute migrations or connect to databases",
+    "interprocedural_depth": 1,
+    "local_assignments": "supported",
+    "project_call_graph": "lightweight static graph with unknown-call accounting",
+    "same_file_bound_method_wrapper_sinks": "supported for simple constructor aliases",
+    "same_file_helper_returns": "supported",
+    "same_file_wrapper_sinks": "supported",
+    "type_inference": "basic"
+  },
+  "deployment_audit": {
+    "limitations": [
+      "does not deploy or contact live infrastructure",
+      "cannot verify provider firewall/DNS/TLS state"
+    ],
+    "status": "static_deployment_contract_smell_audit",
+    "supported": [
+      "Dockerfile",
+      "docker compose",
+      "GitHub Actions",
+      "systemd",
+      "nginx proxy config"
+    ]
+  },
+  "engine": "deterministic static audit helper",
+  "external_audit": {
+    "limitations": [
+      "external tools must be installed",
+      "outputs are summarized and normalized, not fully reinterpreted"
+    ],
+    "status": "optional_external_sast_bridge",
+    "supported": [
+      "ruff",
+      "bandit",
+      "semgrep",
+      "pip-audit"
+    ]
+  },
+  "framework_semantics": [
+    "generic",
+    "flask-lite",
+    "javascript-lite",
+    "messaging-bot-lite",
+    "autonomy-canon-lite",
+    "fastapi-lite",
+    "django-lite",
+    "sqlalchemy-lite"
+  ],
+  "grep_audit": {
+    "limitations": [
+      "regex matching is lexical and can produce false positives/negatives",
+      "does not parse language semantics",
+      "secret detection is intentionally conservative by default; broad organization-specific patterns should be supplied explicitly"
+    ],
+    "status": "deterministic_regex_policy_gate",
+    "supported": [
+      "built-in high-confidence conflict/private-key patterns",
+      "custom JSON pattern files",
+      "inline id:::regex patterns",
+      "include/exclude globs",
+      "FindingCore-normalized reports"
+    ]
+  },
+  "limitations": [
+    {
+      "area": "v54_quality_amplification",
+      "coverage": [
+        "precision corpus false-positive gate",
+        "expected finding regression gate",
+        "synthetic stress time/memory/unknown-call budget",
+        "multi-domain quality matrix"
+      ],
+      "known_gaps": [
+        "not a proof of universal precision/recall",
+        "synthetic stress does not replace largest real-repo benchmarks",
+        "quality-matrix orchestrates gates but does not replace deep external SAST or live e2e"
+      ],
+      "status": "deterministic_meta_gates"
+    }
+  ],
+  "migration_audit": {
+    "limitations": [
+      "does not connect to DB",
+      "does not execute migrations",
+      "does not prove schema equivalence"
+    ],
+    "status": "static_migration_lifecycle_smell_audit",
+    "supported": [
+      "migration presence when DB config exists",
+      "duplicate revision hints",
+      "destructive SQL hints",
+      "SQLite/Postgres mixed semantics"
+    ]
+  },
+  "mutation_audit": {
+    "limitations": [
+      "limited mutant operators",
+      "equivalent mutants are possible",
+      "large projects require explicit --max-mutants/timeout tuning"
+    ],
+    "status": "mutation_testing_smoke_not_full_mutation_suite",
+    "supported": [
+      "temporary project copy",
+      "boolean return flips",
+      "comparison operator flips",
+      "pytest execution per mutant",
+      "surviving mutant findings",
+      "mutation score budget"
+    ]
+  },
+  "neutralized_regression_surfaces": {
+    "external_normalization": "Normalizes supported JSON shapes for Semgrep, Bandit, Ruff and Pyright; it does not guarantee semantic equivalence with the external tools beyond their reported records.",
+    "golden_fixtures": "Fixture expectations are regression contracts, not proof of full real-world recall or precision.",
+    "neutral_profiles": [
+      "messaging-bot-lite",
+      "autonomy-canon-lite",
+      "fastapi-lite",
+      "flask-lite",
+      "django-lite",
+      "sqlalchemy-lite"
+    ],
+    "ownership_conflicts": "Owner conflict detection is lexical and CODEOWNERS-prefix based; it is a governance smell detector, not an organization chart authority.",
+    "zip_fixture_audit": "Duplicate zip entries are allowed only when explicitly intentional by name or marker."
+  },
+  "not_a_full_static_analyzer": true,
+  "production_claim": "Use as a CI helper. Do not treat TOTAL=0 as proof of production readiness.",
+  "pytest_audit": {
+    "coverage_audit": "coverage.py line/branch budget execution gate available as a separate command",
+    "coverage_uncovered_files": "top uncovered measured files can be reported; not a semantic proof",
+    "limitations": [
+      "does not prove semantic adequacy of assertions",
+      "pytest plugin behavior depends on caller flags",
+      "flaky-test diagnosis is not implemented"
+    ],
+    "masking_checks": [
+      "skip/xfail without reason",
+      "xpass",
+      "import-only tests",
+      "test without assertion",
+      "broad exception swallowing"
+    ],
+    "mutation_lite": "conservative mutation smoke gate available as a separate command",
+    "run_pytest": "supported with explicit timeout",
+    "semantic_completeness": "heuristic signals, not proof",
+    "summary_parsing": "pytest stdout/stderr summary heuristic"
+  },
+  "rule_quality": {
+    "limitations": [
+      "test references are string-validated against tests/ corpus",
+      "precision/recall estimates remain human-maintained"
+    ],
+    "requires": [
+      "owner",
+      "status",
+      "precision",
+      "coverage",
+      "known_gaps",
+      "tests"
+    ],
+    "status": "metadata gate, not measured statistical precision proof"
+  },
+  "supply_chain_audit": {
+    "limitations": [
+      "does not query vulnerability databases unless external pip-audit bridge is installed",
+      "does not prove package provenance"
+    ],
+    "status": "manifest_supply_chain_smell_audit",
+    "supported": [
+      "requirements",
+      "pyproject",
+      "package.json",
+      "unpinned/broad/direct-url dependency hints"
+    ]
+  },
+  "symbol_resolution": {
+    "constructor_bound_method_aliases": "same-file simple assignments only",
+    "database_backend_inventory": "supported for deterministic code/config/env surfaces",
+    "dynamic_imports": "not_supported",
+    "from_import_aliases": "supported",
+    "import_aliases": "supported",
+    "runtime_reflection": "limited",
+    "simple_assignment_aliases": "supported"
+  },
+  "type_audit": {
+    "limitations": [
+      "does not implement a complete type checker internally",
+      "tool availability depends on environment",
+      "static annotation heuristics can over/under-count dynamic APIs"
+    ],
+    "status": "external_type_checker_bridge_plus_static_contract",
+    "supported": [
+      "pyright bridge when installed",
+      "mypy bridge when installed",
+      "type-ignore rationale check",
+      "untyped public API budget",
+      "Any leakage signal count"
+    ]
+  },
+  "quality_gate_limitations": {
+    "v58_policy_scorecard": "Policy, CI profile, changed-files and scorecard gates validate declared contracts and selected scopes; they do not prove arbitrary runtime correctness."
+  }
+}

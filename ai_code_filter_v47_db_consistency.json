@@ -1,0 +1,19 @@
+{
+  "version": "v47_db_consistency",
+  "status": "implemented",
+  "features": [
+    "db-consistency CLI command",
+    "DBConsistencyAnalyzer in AnalysisPipeline",
+    "SQLite/Postgres/MySQL marker inventory",
+    "runtime DB backend mismatch detection",
+    "production SQLite fallback detection",
+    "env database contract mismatch detection",
+    "project array/dict backend mismatch regression tests"
+  ],
+  "limitations": [
+    "does not connect to databases",
+    "does not execute migrations",
+    "dynamic DSN construction is limited",
+    "runtime secret stores are out of scope"
+  ]
+}

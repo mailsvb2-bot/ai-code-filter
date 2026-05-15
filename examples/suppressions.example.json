@@ -1,0 +1,11 @@
+{
+  "suppressions": [
+    {
+      "rule_id": "PY020",
+      "file": "legacy/report.py",
+      "owner": "platform-team",
+      "reason": "Legacy compatibility; removal tracked in ARCH-42",
+      "expires": "2026-12-31"
+    }
+  ]
+}

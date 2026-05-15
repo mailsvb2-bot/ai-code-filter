@@ -1,0 +1,27 @@
+{
+  "version": "current",
+  "required_gates": [
+    "analyze",
+    "pytest-audit",
+    "quality-matrix",
+    "release-evidence",
+    "policy-audit",
+    "ci-profile-audit",
+    "grep-audit",
+    "compatibility-audit"
+  ],
+  "required_artifacts": [
+    "README.md",
+    "docs/LIMITATIONS.json",
+    "docs/RULE_OWNERSHIP.json",
+    "docs/COMPATIBILITY_REGRESSIONS.json",
+    "docs/GREP_AUDIT_PATTERNS.json",
+    "docs/CI_PROFILES.json"
+  ],
+  "budgets": {
+    "max_critical": 0,
+    "max_high": 0,
+    "min_scorecard": 90,
+    "max_unknown_call_ratio": 0.25
+  }
+}

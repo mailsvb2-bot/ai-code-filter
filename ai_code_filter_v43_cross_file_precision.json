@@ -1,0 +1,21 @@
+{
+  "version": "v43",
+  "theme": "cross_file_precision_hardening",
+  "implemented": [
+    "cross_file_import_alias_wrapper_detection",
+    "cross_file_imported_class_bound_method_wrapper_detection",
+    "capitalized_class_execute_sql_false_positive_guard",
+    "cross_file_evidence_confidence_metadata"
+  ],
+  "tests_added": [
+    "test_cross_file_shell_wrapper_import_alias_is_detected",
+    "test_cross_file_bound_method_shell_wrapper_is_detected_without_sql_false_positive",
+    "test_symbol_table_resolves_imported_constructor_bound_method_alias"
+  ],
+  "limitations": [
+    "no_full_runtime_type_inference",
+    "no_dynamic_import_resolution",
+    "no_inheritance_dispatch_graph",
+    "cross_file_object_flow_limited_to_simple_constructor_aliases"
+  ]
+}

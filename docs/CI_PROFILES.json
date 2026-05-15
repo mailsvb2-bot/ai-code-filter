@@ -1,0 +1,38 @@
+{
+  "version": "current",
+  "profiles": {
+    "quick": {
+      "strict": true,
+      "commands": [
+        "analyze",
+        "grep-audit",
+        "config-contract",
+        "compatibility-audit"
+      ]
+    },
+    "standard": {
+      "strict": true,
+      "commands": [
+        "analyze",
+        "pytest-audit",
+        "quality-matrix",
+        "call-graph",
+        "release-evidence"
+      ]
+    },
+    "release": {
+      "strict": true,
+      "commands": [
+        "analyze",
+        "pytest-audit",
+        "coverage-audit",
+        "mutation-audit",
+        "behavior-audit",
+        "quality-matrix",
+        "scorecard",
+        "release-audit",
+        "release-evidence"
+      ]
+    }
+  }
+}

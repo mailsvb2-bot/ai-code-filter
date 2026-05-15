@@ -1,0 +1,16 @@
+{
+  "version": "v41",
+  "status": "implemented",
+  "added": [
+    "project profiles: messaging-bot, autonomy-canon",
+    "baseline-audit command",
+    "rule-ownership command and docs/RULE_OWNERSHIP.json",
+    "strict suppression governance: reason/owner/expires/unused",
+    "SARIF partial fingerprints, confidence, evidence"
+  ],
+  "limitations": [
+    "profiles are deterministic heuristics, not proof of full domain correctness",
+    "Canonical Autonomy Canon profile is a guardrail, not a substitute for full architecture review",
+    "Messaging bot profile catches selected high-signal deployment/runtime risks only"
+  ]
+}

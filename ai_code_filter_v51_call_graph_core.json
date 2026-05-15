@@ -1,0 +1,16 @@
+{
+  "issues": [],
+  "failed_files": [],
+  "skipped_files": [],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "TOTAL": 0,
+    "FAILED_FILES": 0,
+    "SKIPPED_FILES": 0
+  },
+  "by_detector": {},
+  "by_category": {}
+}

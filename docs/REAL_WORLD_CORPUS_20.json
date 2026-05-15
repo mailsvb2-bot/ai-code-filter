@@ -1,0 +1,148 @@
+{
+  "schema": "ai-code-filter.real-world-corpus",
+  "minimum_projects": 20,
+  "projects": [
+    {
+      "name": "django",
+      "url": "https://github.com/django/django",
+      "profiles": [
+        "django"
+      ]
+    },
+    {
+      "name": "flask",
+      "url": "https://github.com/pallets/flask",
+      "profiles": [
+        "flask"
+      ]
+    },
+    {
+      "name": "fastapi",
+      "url": "https://github.com/fastapi/fastapi",
+      "profiles": [
+        "fastapi"
+      ]
+    },
+    {
+      "name": "sqlalchemy",
+      "url": "https://github.com/sqlalchemy/sqlalchemy",
+      "profiles": [
+        "sqlalchemy"
+      ]
+    },
+    {
+      "name": "aiogram",
+      "url": "https://github.com/aiogram/aiogram",
+      "profiles": [
+        "messaging-bot"
+      ]
+    },
+    {
+      "name": "requests",
+      "url": "https://github.com/psf/requests",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "urllib3",
+      "url": "https://github.com/urllib3/urllib3",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "url": "https://github.com/pydantic/pydantic",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "pytest",
+      "url": "https://github.com/pytest-dev/pytest",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "black",
+      "url": "https://github.com/psf/black",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "ruff",
+      "url": "https://github.com/astral-sh/ruff",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "mypy",
+      "url": "https://github.com/python/mypy",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "pyright",
+      "url": "https://github.com/microsoft/pyright",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "semgrep",
+      "url": "https://github.com/semgrep/semgrep",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "bandit",
+      "url": "https://github.com/PyCQA/bandit",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "ansible",
+      "url": "https://github.com/ansible/ansible",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "sentry",
+      "url": "https://github.com/getsentry/sentry",
+      "profiles": [
+        "django"
+      ]
+    },
+    {
+      "name": "home-assistant",
+      "url": "https://github.com/home-assistant/core",
+      "profiles": [
+        "generic"
+      ]
+    },
+    {
+      "name": "superset",
+      "url": "https://github.com/apache/superset",
+      "profiles": [
+        "flask",
+        "sqlalchemy"
+      ]
+    },
+    {
+      "name": "airflow",
+      "url": "https://github.com/apache/airflow",
+      "profiles": [
+        "flask",
+        "sqlalchemy"
+      ]
+    }
+  ]
+}
